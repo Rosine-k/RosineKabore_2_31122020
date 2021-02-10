@@ -1,0 +1,191 @@
+body
+{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color:black;
+    margin: auto;
+    max-width: 1440px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+header 
+{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navigation sinscrire";
+}
+
+header img
+{
+    grid-area: logo;
+    padding: 0 2rem;
+    height: 2.8rem;
+}
+
+nav 
+{
+    grid-area: navigation;
+    display: flex;
+    align-items: center;
+}
+
+.navigation1, .navigation2
+{
+    padding: 1.8rem;
+    font-weight: 500;
+    border-top: 3px #f2f2f2 solid;
+    text-align: center;
+    color: black; 
+}
+
+.navigation2:hover
+{
+	border-top: 3px solid #0065fc;
+	color: #0065fc;
+}
+
+.navigation1:link
+{
+    border-top: 3px solid #0065fc;
+	color: #0065fc;
+}
+
+.sinscrire
+{
+    grid-area: sinscrire;
+    font-weight: bold;
+    color: #0065fc;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+footer
+{
+    display: flex;
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    left: 2px;
+
+}
+
+.footerlink
+{
+
+  text-decoration: none;
+    color: black;  
+}
+
+.title_footer
+{
+    font-weight: bolder;
+    font-size: 1.16em;
+    margin-inline-start: 2.5em;
+    padding-left: 0.4em;
+    padding-top: 1.2em;
+}
+
+li
+{
+    list-style: none;
+    padding-bottom: 0.9em;
+    padding-right: 10em;
+    padding-left: 0.8em;
+    font-size: 1em;
+}
+
+@media screen and (max-width:610px)
+{
+    /*header telephone*/
+header
+{
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . sinscrire"
+                         "navigation navigation navigation";
+}
+
+.navigation1, .navigation2
+{
+    border-bottom: 3px solid #F2F2F2;
+    width: 50%;
+    padding-bottom: 1em;
+}
+
+.navigation2
+{
+    border-top: none;
+}
+
+.navigation2:hover
+{
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+}
+
+.navigation1:link
+{
+    border-bottom: 3px solid #0065fc;
+	border-top: none;
+}
+
+
+
+
+
+    /*footer telephone*/
+footer
+{
+    flex-direction: column;
+    position: absolute;
+    bottom: 2px;   
+    right: 2px;
+    left: 2px;
+    height: auto;
+    width: auto;
+    flex-wrap: nowrap;
+
+}
+
+li
+{
+   padding-bottom: 3%; 
+   font-size: 0.86em;
+   margin-left: -1em; 
+   
+}
+
+.title_footer
+{
+    padding-top: 0em;
+    margin-left:1.6em; 
+}
+
+
+}
+
+
+@media only screen and (min-width:600px) and (max-width:999px)
+{
+
+li
+{
+    padding-right: 0em;
+
+}
+
+}
+
