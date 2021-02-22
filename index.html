@@ -29,37 +29,38 @@
         <form>
             <i class="fas fa-map-marker-alt"></i>
             <input type="text" name="recherche" id="recherche" placeholder="Marseille, France"/>
-            <input type="submit" id="rechercher" value="Rechercher"/>
-            <i class="fas fa-search"></i>
+            <a href="#recherche" class="rechercher_link">
+                <span class="rechercher_link_span">Rechercher</span>
+                <i class="fas fa-search " id="rechercher_link_icone"></i>
+            </a>
         </form>
         
         <div class="filtrescontainer">
             
-            <h2 class="filtres">Filtres</h2>
+            <h2 class="filtre_main_titre">Filtres</h2>
             
-            <div class="filtre1"> 
+            <div class="filtre filtre_economique"> 
                 <div class="icone">
                     <i class="fas fa-money-bill-wave"></i>
                 </div>
                 <span class="titre_filtre">Économique</span>
             </div>
             
-            <div class="filtre2"> 
+            <div class="filtre filtre_familial"> 
                 <div class="icone">
                     <i class="fas fa-child"></i>
                 </div>
                 <span class="titre_filtre">Familial</span>
             </div>
             
-            
-            <div class="filtre3"> 
+            <div class="filtre filtre_romantique"> 
                 <div class="icone">
                     <i class="fas fa-heart"></i>
                 </div>
                 <span class="titre_filtre">Romantique</span>
             </div>
             
-            <div class="filtre4"> 
+            <div class="filtre filtre_animaux"> 
                 <div class="icone">
                     <i class="fas fa-dog"></i>
                 </div>
@@ -82,7 +83,7 @@
                        <div  class="vignette">   
                            <picture>
                              <source media="(max-width:610px)" srcset="images/auberge-cannebiere-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/auberge-cannebiere-tablette.jpg"> 
+                             <source media="(max-width:1200px)" srcset="images/auberge-cannebiere-tablette.jpg"> 
                              <img class="vignette_img" src="images/auberge-cannebiere.jpg" alt="vignette_img"/>
                            </picture>
                            <div class="vignette_content">
@@ -105,7 +106,7 @@
                        <div  class="vignette">
                            <picture>
                              <source media="(max-width:610px)" srcset="images/hotel-port-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/hotel-port-tablette.jpg">
+                             <source media="(max-width:1200px)" srcset="images/hotel-port-tablette.jpg">
                              <img class="vignette_img" src="images/hotel-port.jpg" alt="vignette_img"/>
                            </picture>
                            <div class="vignette_content">
@@ -128,7 +129,7 @@
                        <div  class="vignette">
                            <picture>
                              <source media="(max-width:610px)" srcset="images/hotel-mouettes-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/hotel-mouettes-tablette.jpg">
+                             <source media="(max-width:1200px)" srcset="images/hotel-mouettes-tablette.jpg">
                              <img class="vignette_img" src="images/hotel-mouettes.jpg" alt="vignette_img"/>
                            </picture>
                            <div class="vignette_content">
@@ -151,7 +152,7 @@
                        <div  class="vignette">
                            <picture>
                              <source media="(max-width:610px)" srcset="images/hotel-de-la-mer-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/hotel-de-la-mer-tablette.jpg">
+                             <source media="(max-width:1200px)" srcset="images/hotel-de-la-mer-tablette.jpg">
                              <img class="vignette_img" src="images/hotel-de-la-mer.jpg" alt="vignette_img"/>
                            </picture>
                            <div class="vignette_content">
@@ -174,7 +175,7 @@
                        <div  class="vignette">
                            <picture>
                              <source media="(max-width:610px)" srcset="images/auberge-panier-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/auberge-panier-tablette.jpg">
+                             <source media="(max-width:1200px)" srcset="images/auberge-panier-tablette.jpg">
                              <img class="vignette_img" src="images/auberge-panier.jpg" alt="vignette_img"/>
                            </picture>  
                            <div class="vignette_content">
@@ -197,7 +198,7 @@
                        <div  class="vignette">
                            <picture>
                              <source media="(max-width:610px)" srcset="images/hotel-amina-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/hotel-amina-tablette.jpg">
+                             <source media="(max-width:1200px)" srcset="images/hotel-amina-tablette.jpg">
                              <img class="vignette_img" src="images/hotel-amina.jpg" alt="vignette_img"/>
                            </picture>  
                            <div class="vignette_content">
@@ -225,7 +226,7 @@
                        <div  class="vignette_populaire">
                            <picture>
                              <source media="(max-width:610px)" srcset="images/hotel-soleil-matin-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/hotel-soleil-matin-tablette.jpg"> 
+                             <source media="(max-width:1200px)" srcset="images/hotel-soleil-matin-tablette.jpg"> 
                              <img class="vignettepopulaire_img" src="images/hotel-soleil-matin.jpg" alt="vignettepopulaire_img"/>
                            </picture>  
                            <div class="vignettepopulaire_content">
@@ -248,7 +249,7 @@
                        <div  class="vignette_populaire">
                            <picture>
                              <source media="(max-width:610px)" srcset="images/chambres-hotes-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/chambres-hotes-tablette.jpg"> 
+                             <source media="(max-width:1200px)" srcset="images/chambres-hotes-tablette.jpg"> 
                              <img class="vignettepopulaire_img" src="images/chambres-hotes.jpg" alt="vignettepopulaire_img"/>
                            </picture>  
                            <div class="vignettepopulaire_content">
@@ -271,7 +272,7 @@
                        <div  class="vignette_populaire">
                            <picture>
                              <source media="(max-width:610px)" srcset="images/hotel-bleu-blanc-mobile.jpg">
-                             <source media="(max-width:999px)" srcset="images/hotel-bleu-blanc-tablette.jpg"> 
+                             <source media="(max-width:1200px)" srcset="images/hotel-bleu-blanc-tablette.jpg"> 
                              <img class="vignettepopulaire_img" src="images/hotel-bleu-blanc.jpg" alt="vignettepopulaire_img"/>
                            </picture>  
                            <div class="vignettepopulaire_content">
@@ -299,7 +300,7 @@
                   <div class="vignette-activites1">
                        <picture>
                          <source media="(max-width:610px)" srcset="images/vieux-port-mobile.jpg">
-                         <source media="(max-width:999px)" srcset="images/vieux-port-tablette.jpg"> 
+                         <source media="(max-width:1200px)" srcset="images/vieux-port-tablette.jpg"> 
                          <img class="activite1_img" src="images/vieux-port.jpg" alt="activite1_img"/>
                        </picture>   
                        <div class="vignetteactivites_content">
@@ -314,7 +315,7 @@
                   <div class="vignette-activites2">
                        <picture>
                          <source media="(max-width:610px)" srcset="images/fort-pomegues-mobile.jpg">
-                         <source media="(max-width:999px)" srcset="images/fort-pomegues-tablette.jpg"> 
+                         <source media="(max-width:1200px)" srcset="images/fort-pomegues-tablette.jpg"> 
                          <img class="activite3_img" src="images/fort-pomegues.jpg" alt="activite3_img"/>
                        </picture> 
                       <div class="vignetteactivites_content">
@@ -327,7 +328,7 @@
                   <div class="vignette-activites3"> 
                        <picture>
                          <source media="(max-width:610px)" srcset="images/frioul-mobile.jpg">
-                         <source media="(max-width:999px)" srcset="images/frioul-tablette.jpg"> 
+                         <source media="(max-width:1200px)" srcset="images/frioul-tablette.jpg"> 
                          <img class="activite2_img" src="images/frioul.jpg" alt="activite2_img"/>
                        </picture>   
                        <div class="vignetteactivites_content"> 
@@ -342,7 +343,7 @@
                    <div class="vignette-activites4">
                        <picture>
                          <source media="(max-width:610px)" srcset="images/calanques-mobile.jpg">
-                         <source media="(max-width:999px)" srcset="images/calanques-tablette.jpg"> 
+                         <source media="(max-width:1200px)" srcset="images/calanques-tablette.jpg"> 
                          <img class="activite1_img" src="images/calanques.jpg" alt="activite1_img"/>
                        </picture>    
                        <div class="vignetteactivites_content">  
@@ -357,7 +358,7 @@
                   <div class="vignette-activites5">
                        <picture>
                          <source media="(max-width:610px)" srcset="images/notre-dame-garde-mobile.jpg">
-                         <source media="(max-width:999px)" srcset="images/notre-dame-garde-tablette.jpg">  
+                         <source media="(max-width:1200px)" srcset="images/notre-dame-garde-tablette.jpg">  
                          <img class="activite4_img" src="images/notre-dame-garde.jpg" alt="activite4_img"/> 
                        </picture>    
                        <div class="vignetteactivites_content">  
@@ -370,7 +371,7 @@
                    <div class="vignette-activites6">
                        <picture>
                          <source media="(max-width:610px)" srcset="images/parc-longchamp-mobile.jpg">
-                         <source media="(max-width:999px)" srcset="images/parc-longchamp-tablette.jpg">     
+                         <source media="(max-width:1200px)" srcset="images/parc-longchamp-tablette.jpg">     
                          <img class="activite4_img" src="images/parc-longchamp.jpg" alt="activite4_img"/> 
                        </picture>    
                        <div class="vignetteactivites_content"> 
